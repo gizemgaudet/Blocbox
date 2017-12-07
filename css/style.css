@@ -1,0 +1,91 @@
+html, body{
+   overflow-x: hidden;
+ }
+ body {
+   font-color:#353535;
+ }
+
+ h1 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 40px;
+   line-height: 50px;
+   font-weight: 300;
+   margin-bottom: 5px;
+ }
+  h2 {
+   font-family: 'Roboto Slab', serif;
+   font-size: 20px;
+   line-height: 32px;
+   font-weight: 100;
+   margin-bottom: 5px;
+ }
+ h3 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   letter-spacing: 0.2em;
+   margin-bottom: 5px;
+ }
+ h5 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+   font-weight: normal;
+   margin-bottom: 5px;
+ }
+ h4 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 16px;
+   line-height: 30px;
+   font-weight: 400;
+   margin-bottom: 5px;
+ }
+ h6 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 24px;
+   line-height: 30px;
+   font-weight: 400;
+   margin-bottom: 5px;
+ }
+ h7 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   letter-spacing: 0.15em;
+   margin-bottom: 5px;
+ }
+  h8 {
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   margin-bottom: 5px;
+ }
+ p {
+   font-family: 'Roboto Slab', serif;
+   font-size: 18px;
+   line-height: 30px;
+   font-weight: 100;
+ }
+ 
+ /* GRID */
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+ }
+ .container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+ .one-half, .one-third, .one-fourth {
+   width:96%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
+ }
