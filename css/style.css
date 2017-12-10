@@ -3,20 +3,21 @@ html, body{
  }
  body {
    font-color:#353535;
+   background: #c7ced0;
  }
 
  h1 {
    font-family: 'Roboto', sans-serif;
    font-size: 40px;
    line-height: 50px;
-   font-weight: 300;
+   font-weight: 400;
    margin-bottom: 5px;
  }
   h2 {
    font-family: 'Roboto Slab', serif;
-   font-size: 20px;
-   line-height: 32px;
-   font-weight: 100;
+   font-size20px;
+   line-height: 36px;
+   font-weight: 300;
    margin-bottom: 5px;
  }
  h3 {
@@ -28,14 +29,14 @@ html, body{
  }
  h5 {
    font-family: 'Roboto', sans-serif;
-   font-size: 18px;
-   font-weight: normal;
+   font-size: 20px;
+   font-weight: 400;
    margin-bottom: 5px;
  }
  h4 {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
-   line-height: 30px;
+   line-height: 34px;
    font-weight: 400;
    margin-bottom: 5px;
  }
@@ -48,12 +49,12 @@ html, body{
  }
  h7 {
    font-family: 'Roboto', sans-serif;
-   font-size: 16px;
+   font-size: 14px;
    font-weight: 400;
    letter-spacing: 0.15em;
    margin-bottom: 5px;
  }
-  h8 {
+ h8 {
    font-family: 'Roboto', sans-serif;
    font-size: 14px;
    font-weight: 400;
@@ -64,7 +65,7 @@ html, body{
    font-family: 'Roboto Slab', serif;
    font-size: 18px;
    line-height: 30px;
-   font-weight: 100;
+   font-weight: 300;
  }
  
  /* GRID */
@@ -83,10 +84,187 @@ html, body{
  .container:after {
    clear: both;
  }
- .one-half, .one-third, .one-fourth {
+ .one-half, .one-third, .one-fourth, .one-fifth {
    width:96%;
    float:left;
    position:relative;
    min-height: 1px;
    margin:0 2% 20px;
  }
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+   .one-fifth {
+     width:17%;
+ }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ @media (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+ }
+
+ /* HEADER */
+ header {
+   color:#353535;
+   background-image: url("images/hero.png");
+   height:1106px;
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top center;
+   margin-top: 0;
+   padding: 0;
+}
+ }
+ header nav {
+   padding:1em 0;
+ }
+ header nav ul {
+   display:inline;
+   text-align: right;
+   float:right;
+   margin:0;
+ }
+ header nav ul > li {
+   list-style-type: none;
+   display: inline-block;
+   margin:0 15px;
+ }
+ header nav ul > li.btn-outline {
+   padding:16px 20px;
+   text-align: center;
+   border:3px solid #FFFFFF;
+   font-weight: 400;
+   width: 140px;
+   display: inline-block;
+   box-shadow: 1px 0% 3px 20% #000000;
+ }
+ header nav ul > li.btn-outline:hover {
+   background:#FFFFFF;
+ }
+ header nav ul > li > a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ header nav ul > li.btn-outline:hover > a {
+   color:#353535;
+ }
+ header .hero {
+   text-align: left;
+   display: block;
+   position: relative;
+ }
+
+ /* Here text */
+ .hero-text one-half {
+   margin: 20
+ }
+
+/* The hero image */
+html, body{
+   height: 100%;
+}
+
+ /* BUTTONS */
+ .btn-header {
+   color: #FFFFFF;
+   font-weight: 400;
+   text-decoration: none;
+   text-align: center;
+   padding: 16px 20px;
+   background: #d47a34;
+   border: 3px solid #d47a34;
+   display: inline-block;
+   width: 140px;
+   box-shadow: 1px 0% 3px 20% #000000;
+ }
+ .btn-header:hover, .btn-trial:hover {
+   background:#e38f4d;
+   border: 3px solid #e38f4d;
+ }
+ .btn-trial {
+   color: #FFFFFF;
+   font-weight: 400;
+   text-decoration: none;
+   text-align: center;
+   padding: 16px 20px;
+   background: #d47a34;
+   border: 3px solid #d47a34;
+   display: inline-block;
+   width: 200px;
+   box-shadow: 1px 0% 3px 20% #000000;
+ }
+ .btn-brown {
+   color: #FFFFFF;
+   font-weight: 400;
+   text-decoration: none;
+   text-align: center;
+   padding: 16px 20px;
+   background: #353535;
+   border: 3px solid #353535;
+   display: inline-block;
+   width: 140px;
+   box-shadow: 1px 0% 3px 20% #000000;
+ }
+ .btn-brown:hover {
+   background:#484545;
+   border: 3px solid #484545;
+ }
+
+/* FEATURES */
+ .create-notes-text {
+   list-style-type: none;
+   display: inline-block;
+   float:right;  
+   margin:400px 0px 0px 0px; 
+ }
+ .create-notes-image {
+   list-style-type: none;
+   display: inline-block;
+   float: left;
+   margin:40px 0px 0px 0px; 
+ }
+.save-images-text {
+   list-style-type: none;
+   display: inline-block;
+   float:left;
+   margin:400px 0px 0px 0px;
+}
+.save-images-image {
+   list-style-type: none;
+   display: inline-block;
+   float: right;
+   margin:80px 0px 0px 0px; 
+ }
+.add-links-text {
+   list-style-type: none;
+   display: inline-block;
+   float:right;
+   margin:800px 0px 0px 0px;
+}
+.add-links-image {
+   list-style-type: none;
+   display: inline-block;
+   float: left;
+   margin:120px 0px 0px 0px;
+} 
