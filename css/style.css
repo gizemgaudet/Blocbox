@@ -6,6 +6,7 @@ html, body{
    background: #c7ced0;
  }
 
+ /* Font Styles */
  h1 {
    font-family: 'Roboto', sans-serif;
    font-size: 40px;
@@ -33,14 +34,12 @@ html, body{
    font-size: 14px;
    font-weight: 400;
    margin-top: 70px;
-   margin-bottom: 10px;
  }
  h4 {
    font-family: 'Roboto', sans-serif;
    font-size: 16px;
    line-height: 40px;
    font-weight: 400;
-   margin-bottom: 5px;
  }
  h6 {
    font-family: 'Roboto', sans-serif;
@@ -68,111 +67,59 @@ html, body{
   font-weight: 400;
   margin-bottom: 5px;
 }
-h10 {
+ h10 {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-weight: 400;
-  margin: 10px 70px 5px -40px;
-  float: left;
 }
  p {
-   font-family: 'Roboto Slab', serif;
-   font-size: 18px;
-   line-height: 30px;
-   font-weight: 300;
- }
- 
- /* GRID */
- .container {
-   margin-right: auto;
-   margin-left: auto;
-   padding-left: 15px;
-   padding-right: 15px;
-   position: relative;
- }
- .container:before,
- .container:after {
-   content: " ";
-   display: table;
- }
- .container:after {
-   clear: both;
- }
- .one-half, .one-third, .one-fourth, .one-fifth {
-   width:96%;
-   float:left;
-   position:relative;
-   min-height: 1px;
-   margin:0 2% 20px;
- }
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
 
-@media (min-width: 768px) {
-   .container {
-     width: 750px;
-   }
- }
- @media (min-width: 992px) {
-   .container {
-     width: 970px;
-   }
-   .one-half {
-     width:46%;
-   }
-   .one-third {
-     width:29.33333%;
-   }
-   .one-fourth {
-     width:21%;
-   }
-   .one-fifth {
-     width:17%;
- }
- @media (min-width: 1200px) {
-   .container {
-     width: 1170px;
-   }
- @media (min-width: 1900px) {
-  .container {
-    width: 1870px;
-  }
- }
 
  /* HEADER */
+ /* Hero image */
  header {
    color:#353535;
    background-image: url("images/hero.png");
-   height:1200px;
-   width:100%;
+   min-height: 1250px;
+   min-width:100%;
    background-repeat: no-repeat;
-   background-size: cover;
    background-position: top center;
-   margin-top: 0;
-   padding: 0;
-}
+   background-size: cover;
  }
+
+ /* Hero navigation */
  header nav {
-   padding:1.7em 0;
+   padding: 1em 0;
+   margin: 0px;
+   max-height:120px;
+   background-color: #353535;
+   width: 100%;
  }
  header nav ul {
-   display:inline;
    text-align: right;
    float:right;
-   margin:0;
+   margin: 0px;
  }
  header nav ul > li {
    list-style-type: none;
    display: inline-block;
-   margin:0 15px;
+   margin: 34px 15px 0px;
  }
  header nav ul > li.btn-outline {
-   padding:16px 20px;
+   padding: 12px 14px;
    text-align: center;
-   border:3px solid #FFFFFF;
+   border: 3px solid #FFFFFF;
    font-weight: 400;
-   width: 140px;
+   min-width: 100px;
+   position:relative;
    display: inline-block;
    box-shadow: 1px 0% 3px 20% #000000;
-   margin-top: 32px
+   margin: 34px 15px 0px;
  }
  header nav ul > li.btn-outline:hover {
    background:#FFFFFF;
@@ -184,36 +131,49 @@ h10 {
  header nav ul > li.btn-outline:hover > a {
    color:#353535;
  }
+ header .btn {
+   margin: -125px 80px 0px 20px;
+   float:right;
+ }
+ header .btn:before,
+ header .btn:after {
+   content: " ";
+   display: table;
+ }
+ header .btn:after {
+   clear: both;
+}
+
+ /* Hero text */
  header .hero {
    text-align: left;
    display: block;
-   position: relative;
+   float: left;
+   margin: 215px 100px 40px 130px;
  }
-
- /* Hero text */
- .text{
-   margin-top: 260px
+ header .site-logo {
+   margin-left: 60px;
+   margin-top: 20px;
  }
-
-/* The hero image */
-html, body{
-   height: 100%;
+html, header nav.container {
+ margin: 0px;
 }
 
- /* BUTTONS */
+ /* Buttons */
  .btn-header {
    color: #FFFFFF;
    font-weight: 400;
    text-decoration: none;
    text-align: center;
-   padding: 16px 20px;
+   padding: 12px 14px;
    background: #d47a34;
    border: 3px solid #d47a34;
    display: inline-block;
-   width: 140px;
+   min-width: 100px;
+   position: relative;
    box-shadow: 1px 0% 3px 20% #000000;
  }
- .btn-header:hover, .btn-trial:hover {
+ .btn-trial-casual:hover, .btn-header:hover, .btn-trial:hover {
    background:#e38f4d;
    border: 3px solid #e38f4d;
  }
@@ -222,24 +182,51 @@ html, body{
    font-weight: 400;
    text-decoration: none;
    text-align: center;
-   padding: 16px 20px;
+   padding: 12px 14px;
    background: #d47a34;
    border: 3px solid #d47a34;
    display: inline-block;
-   width: 200px;
-   position: relative;
+   min-width: 120px;
    box-shadow: 1px 0% 3px 20% #000000;
+   margin-bottom: 40px;
+   margin-top: 20px;
  }
+ .btn-trial-header {
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 14px;
+  background: #d47a34;
+  border: 3px solid #d47a34;
+  display: inline-block;
+  min-width: 120px;
+  box-shadow: 1px 0% 3px 20% #000000;
+ }
+ .btn-trial-casual {
+  color: #FFFFFF;
+  font-weight: 400;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 14px;
+  background: #d47a34;
+  border: 3px solid #d47a34;
+  display: inline-block;
+  min-width: 120px;
+  box-shadow: 1px 0% 3px 20% #000000;
+  margin-bottom: 40px;
+  margin-top: 70px;
+}
  .btn-brown {
    color: #FFFFFF;
    font-weight: 400;
    text-decoration: none;
    text-align: center;
-   padding: 16px 20px;
+   padding: 14px 16px;
    background: #353535;
    border: 3px solid #353535;
    display: inline-block;
-   width: 140px;
+   min-width: 100px;
    box-shadow: 1px 0% 3px 20% #000000;
  }
  .btn-brown:hover {
@@ -247,171 +234,240 @@ html, body{
    border: 3px solid #484545;
  }
 
+
 /* BENEFITS */
-.benefits {
+ .benefits {
    text-align: left;
    display:block;
    position:relative;
- }
+}
  .benefits ul {
    margin: 0 auto;
    padding:4em 0;
+   margin: 0px;
  }
  .benefits ul li {
    list-style-type: none;
  }
  .benefits h3 {
    color: #353535;
- }
- .create-notes-text {
-   list-style-type: none;
-   float:right;  
-   margin:325px -50px 0px 100px;
-   vertical-align: middle;
- }
- .create-notes-image {
-   list-style-type: none;
-   float: left;
-   margin-left: -180px; 
-   size: cover;
- }
-.save-images-text {
-   list-style-type: none;
-   float:left;
-   vertical-align: middle;
-   margin: 400px 400px 0 auto;
+ } 
 
-}
-.save-images-image {
-   list-style-type: none;
-   float: right;
-   margin:-550px 0px 0px 0px;
-   size: cover;
- }
-.add-links-text {
-   list-style-type: none;
-   float:right;
-   vertical-align: middle;
-   margin:750px -600px 0px 250px;
-}
-.add-links-image {
-   list-style-type: none;
+ /* Create Notes Benefit */
+ .create-notes img {
    float: left;
-   margin-left: -180px; 
-   margin-top: 420px;
-   size: cover;
-}
+   clear: left;
+   width: auto;
+   max-width: 100%;
+   height: auto;
+ }
+ .create-notes-text.one-half {
+   padding-right:15px;
+   padding-left:40px;
+   position: relative;
+   width: 30%;
+ }
+
+
+ /* Save Images Benefit */
+ .save-images img {
+   float: right;
+   clear: right;
+   width: auto;
+   max-width: 100%;
+   height: auto;
+   margin-top: 4%;
+ }
+ .save-images-text.one-half {
+   padding-right:15px;
+   padding-left:40px;
+   position: relative;
+   width: 30%;
+ }
+ 
+
+ /* Add Links Benefit */
+ .add-links img {
+   float: left;
+   clear: left;
+   width: auto;
+   max-width: 100%;
+   height: auto;
+   margin-top: 4%;
+ }
+ .add-links-text.one-half {
+   padding-right:15px;
+   padding-left:40px;
+   position: relative;
+   width:30%;
+ }
+
 
 /* PRICING */
- .pricing {
+/* Three pricing columns of equal width for pricing boxes */
+.columns {
+  display: inline-block;
+  width: 25%;
+  margin: 0 20px;  
+  background: #FFFFFF;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* There pricing boxes group */
+div.columns-group {
+  display: inline-block;
+  margin: 30px auto;
+  width: 80%;
+}
+
+/* Style for the list */
+.price {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Pricing boxes shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+  border-radius: 20px;
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #478b95;
+  color: #FFFFFF;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   text-align: center;
-  height: 900px;
-  background-position: relative;
-  background-color: #353535;
-  border-radius: 0px 500px 0px 0px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+/* Pricing list items */
+.price li {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Pricing section */
+ .pricing {
+   text-align: center;
+   height: 900px;
+   background-position: relative;
+   background-color: #353535;
+   border-radius: 0px 500px 0px 0px;
+   min-width:100%;
+   background-repeat: no-repeat;
+   background-position: top center;
+   background-size: cover;
 }
  .pricing h6 {
-  color:#478b95;
+   color:#478b95;
  }
-
  .pricing h4 {
-   background: #478b95;
+   background-color: #478b95;
    color: #FFFFFF;
-   display: inline-block;
-   height: 65px;
-   width: 343px;
    border-top-left-radius: 20px;
    border-top-right-radius: 20px;
-   margin: auto;
    text-align: center;
-   vertical-align: middle;
-   margin-left: -15px;
-   line-height: 65px;
+   background-position: top center;
+   margin:0 auto;  
  }
  .pricing ul {
    margin:0 auto;
-   padding:2em 0;
+ }
+ .pricing ul .casual {
+   margin-bottom: 40px;
  }
  .pricing ul li {
    list-style-type: none;
  } 
  .pricing h3 {
-  color: #FFFFFF;
-  margin-top: 80px;
+   color: #FFFFFF;
+   padding-top: 80px;
  }
  .pricing p {
-  color: #FFFFFF;
-}
- .box {
-   padding:0 15px 15px;
-   background: #FFFFFF;
-   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
-   min-height: 460px;
-   position: relative;
-   margin-top: 25px;
-   border-radius: 20px;
+   color: #FFFFFF;
+   width: 40%;
+   margin: 20px auto;
  }
- .box .btn-trial {
-  position:absolute;
-  bottom:40px;
-  left:50px;
-  right:20px;
-  vertical-align: middle;
- }
- .bookmark-icon {
-  margin-right: 500px;
-  position: absolute;
-  bottom: 427px;
-  left: 20px;
-  right: 20px;
- }
+
+
  /* TESTIMONIALS */
+ /* Testimonials section */
  .testimonials {
-   background-color: #478b95;
-   border-radius: 0px 0px 0px 500px;
-   height: 900px;
-   padding:4em 0;
-   text-align: center;
+ background-color: #478b95;
+ border-radius: 0px 0px 0px 500px;
+ height: 800px;
+ padding:4em 0;
+ text-align: center;
  }
  .testimonials ul li {
-   list-style-type: none;
- }
- .testimonials blockquote {
-   color:#FFFFFF;
-   text-align: left;
-   font-family: 'Roboto', sans-serif;
-   font-size: 16px;
-   line-height: 40px;
-   font-weight: 400;
-   margin: -190px 20px 20px 120px;
-   float: left;
+ list-style-type: none;
  }
  .testimonials-bg {
-  background:#353535;
-  position: relative;
-  padding:40px;
-  width: 450px;
-  height: 150px;
-  border-radius: 20px; 
-  margin: 20px;
-}
- .testimonials img {
-   float: left;
-   margin: -10px 0px 0px -10px;
-   width: 100px;
-   height: 100px;
+ background:#353535;
+ position: relative;
+ padding:10px;
+ width: auto;
+ max-width: 100%;
+ height: auto;
+ border-radius: 20px; 
+ margin: 10px;
  }
  .testimonials p.name {
-   float: left;
-   text-align: left;
-   font-size:13px;
-   color: #FFFFFF;
-   margin: 100px 40px 20px 30px;
-   float: left;
+ text-align: left;
+ font-size:13px;
+ color: #FFFFFF;
+ width:100%;
+ margin-left: 20px;
+ }
+ .testimonials p.saying {
+ text-align: left;
+ font-size:14px;
+ color: #FFFFFF;
+ width: 100%;
  }
  .testimonials p, h3{
-  color:#FFFFFF;
+ color:#FFFFFF;
  }
+ .testimonials p {
+ width: 40%;
+ margin: 20px auto;
+ }
+ 
+ /* Testi - Testimonials one-half testimonials box - There are four of them*/
+.testi {
+  background:#353535;
+  position: relative;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 20px;
+  display: inline-block;
+}
+.testi::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.testi img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: auto;
+  height: auto;
+  max-width: 140px;
+}
+
 
  /* FOOTER */
  footer {
@@ -422,29 +478,153 @@ html, body{
    overflow: hidden;
    z-index: 0;
  }
- footer nav ul li {
-   list-style-type: none;
-   display: inline;
- }
- footer nav ul li a {
-   color:#FFFFFF;
-   text-decoration: none;
- }
- footer .right-footer-block {
-   background-color: transparent;
- }
  footer .copyright-block {
-   margin: 110px 0px 5px -40px;
    float: left;
-   list-style-type: none;
+   margin: 95px 0px 0px 50px;
  }
  footer .logo {
-   margin: -105px -200px 0px 0px;
    float: right;
-   list-style-type: none;
+   margin: 35px 90px 0px 0px;
+   max-height: auto;
+   max-width: auto;
  }
- footer .social {
-   margin: 5px 55px 5px -40px;
-   float: left;
+ footer div ul li {
    list-style-type: none;
+  }
+ footer ul {
+   padding:0px;
+ }  
+ footer div ul li a {
+  color:#FFFFFF;
+  text-decoration: none;
+  } 
+/* There is a 4 columns layout in footer */ 
+.column {
+  float: left;
+  width: 25%;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+ /* GRID */
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+   display: block;
+   min-width: 100%;
+   min-height: 153px;
  }
+ .container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+ .benefits .one-half {
+   max-width:96%;
+   float:left;
+   min-height: 1px;
+   margin:0 5% 20px;
+   position:relative;
+   padding: 15% 0;
+   max-height: 450px;
+ } 
+ li.testimonials-bg.one-half {
+  max-width:96%;
+  display: inline-block;
+  margin:0 2% 20px;
+  position:relative;
+  max-height:100%;
+  width:30%;
+ }
+ div.testi.one-half {
+  max-width:96%;
+  display: inline-block;
+  margin:0 20px 35px 10px;
+  position:relative;
+  max-height:100%;
+  width:30%;
+ }
+ div.testimonials-group {
+  display: inline-block;
+  margin: 15px auto;
+  width: 90%;
+ }
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+@media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .btn {
+     max-width: 70%;
+   }
+   .site-logo {
+     max-width: 30%;
+   }
+   .create-notes, .save-images, .add-links {
+     max-width: auto;
+     max-height: auto;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+   .one-fifth {
+     width:17.6%;
+   }
+   .columns {
+    max-width:27%;
+  }
+}
+
+/* Responsive layout - when the screen is less than 1000px wide, make the pricing tables stack on top of each other instead of next to each other*/
+ @media only screen and (max-width: 1000px) {
+   .columns {
+    width: 50%;
+   }
+  }
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+  }
+ @media (min-width: 1900px) {
+  .container {
+    width: 1870px;
+  }
+ }
+
+ /* Responsive layout - when the screen is less than 600px wide, make the four testimonials boxesstack on top of each other instead of next to each other*/
+ @media (max-width: 600px) {
+  testi {
+      width: 100%;
+  }
+}
+/* Responsive layout - when the screen is less than 600px wide, make the four columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
