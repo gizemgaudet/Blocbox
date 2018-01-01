@@ -33,7 +33,7 @@ html, body{
    font-family: 'Roboto', sans-serif;
    font-size: 14px;
    font-weight: 400;
-   margin-top: 70px;
+   margin-top: 45px;
  }
  h4 {
    font-family: 'Roboto', sans-serif;
@@ -99,6 +99,7 @@ html, body{
    max-height:120px;
    background-color: #353535;
    width: 100%;
+   height:auto;
  }
  header nav ul {
    text-align: right;
@@ -150,10 +151,11 @@ html, body{
    display: block;
    float: left;
    margin: 215px 100px 40px 130px;
+   width: 350px;
  }
  header .site-logo {
    margin-left: 60px;
-   margin-top: 20px;
+   margin-top: 15px;
  }
 html, header nav.container {
  margin: 0px;
@@ -266,6 +268,8 @@ html, header nav.container {
    padding-left:40px;
    position: relative;
    width: 30%;
+   max-width: 100%;
+   height: auto;
  }
 
 
@@ -283,6 +287,8 @@ html, header nav.container {
    padding-left:40px;
    position: relative;
    width: 30%;
+   max-width: 100%;
+   height: auto;
  }
  
 
@@ -300,6 +306,8 @@ html, header nav.container {
    padding-left:40px;
    position: relative;
    width:30%;
+   max-width: 100%;
+   height: auto;
  }
 
 
@@ -308,7 +316,7 @@ html, header nav.container {
 .columns {
   display: inline-block;
   width: 25%;
-  margin: 0 20px;  
+  margin: 10px 20px;  
   background: #FFFFFF;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
   border-radius: 20px;
@@ -319,7 +327,8 @@ html, header nav.container {
 /* There pricing boxes group */
 div.columns-group {
   display: inline-block;
-  margin: 30px auto;
+  margin: 20px auto;
+  margin-bottom:80px;
   width: 80%;
 }
 
@@ -360,7 +369,7 @@ div.columns-group {
 /* Pricing section */
  .pricing {
    text-align: center;
-   height: 900px;
+   height: auto;
    background-position: relative;
    background-color: #353535;
    border-radius: 0px 500px 0px 0px;
@@ -406,7 +415,7 @@ div.columns-group {
  .testimonials {
  background-color: #478b95;
  border-radius: 0px 0px 0px 500px;
- height: 800px;
+ height: auto;
  padding:4em 0;
  text-align: center;
  }
@@ -440,7 +449,7 @@ div.columns-group {
  color:#FFFFFF;
  }
  .testimonials p {
- width: 40%;
+ width: 45%;
  margin: 20px auto;
  }
  
@@ -473,18 +482,18 @@ div.columns-group {
  footer {
    background-color: #353535;
    color: #FFFFFF;
-   height: 220px;
+   height: auto;
    position: relative;
    overflow: hidden;
    z-index: 0;
  }
  footer .copyright-block {
    float: left;
-   margin: 95px 0px 0px 50px;
+   margin: 75px 0px 0px 50px;
  }
  footer .logo {
    float: right;
-   margin: 35px 90px 0px 0px;
+   margin: 20px 90px 0px 0px;
    max-height: auto;
    max-width: auto;
  }
@@ -618,13 +627,18 @@ div.columns-group {
 
  /* Responsive layout - when the screen is less than 600px wide, make the four testimonials boxesstack on top of each other instead of next to each other*/
  @media (max-width: 600px) {
-  testi {
+  .testi {
       width: 100%;
   }
 }
 /* Responsive layout - when the screen is less than 600px wide, make the four columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
   .column {
       width: 100%;
+  }
+}
+ @media (max-width: 1000px) {
+  header {
+      background-color: rgba(255,255,255,0.9);
   }
 }
