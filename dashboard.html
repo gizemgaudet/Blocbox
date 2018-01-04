@@ -6,7 +6,7 @@
   <title>Dashboard | Blocbox</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,500" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -24,8 +24,12 @@
      <a href="#" class="site-logo"><img src="images/site-logo.png" /></a>
      <div class="items">
        <p>Items</p>
+       <div class="all-items">
+         <ul>
+          <li class="all-items"><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
+         </ul>
+       </div>
        <ul>
-         <li><a href="#"><i class="fa fa-th-large"></i> All Items</a></li>
          <li><a href="#"><i class="fa fa-file-o"></i> Notes</a></li>
          <li><a href="dashboard-images.html"><i class="fa fa-picture-o"></i> Images</a></li>
          <li><a href="#"><i class="fa fa-link"></i> Links</a></li>
@@ -41,9 +45,7 @@
 <main role="main">
 
   <!-- Header -->
-   <section class="content">
-     <div class="container">
-       <div class="header">
+   <section class="header">
         <div class="settings">
           <img class="settings-image" src="images/joey-kirk.png">
           <p>Joey Kirk</p>
@@ -51,19 +53,18 @@
         </div> 
 
         <div class="search-field">
-          <h2>SEARCH</h2>
           <i class="fa fa-search"></i>
+          <input type="text" placeholder="SEARCH" name="search">
         </div>
-
-       </div>
-     </div>
+  </section>
 
   <!-- Content Items - Posts and ADD NEW Button -->
+   <section class="content">
     <div class="container">
     <!-- FIRST ROW -->
        <div class="content-item">
-         <a href="#" class="btn">+ ADD NEW</a>
-         <div class="item-box">
+         <div class="item-box-button">
+          <a href="#" class="btn">+ ADD NEW</a>
          </div>
        </div>
 
@@ -75,14 +76,14 @@
 
        <div class="content-item">
          <div class="item-box">
-          <h3><img class="favicon" src="https://www.airbnb.com/favicon.ico"> <a href="#">airbnb.com</a></h3>
+          <h4><img class="favicon" src="https://www.airbnb.com/favicon.ico"> <a>airbnb.com</a></h4>
           <p>Vacation Rentals, Homes, Apartments &amp; Rooms for Rent &mdash; Airbnb</p>
          </div>
        </div>
 
        <div class="content-item">
          <div class="item-box">
-          <h3><a href="#">Need to find a designer</a></h3>
+          <h4><a>Need to find a designer</a></h4>
           <p>We have a one-person design team, but are ready to expand. We need to look for a second designer right now so we can continue to grow.</p>
           <p>Put your recommendations here so we can view all of them. ...</p>
          </div>
@@ -97,7 +98,7 @@
 
        <div class="content-item">
          <div class="item-box">
-          <h3><img class="favicon" src="https://www.yourkarma.com/favicon.ico"> <a href="#">yourkarma.com</a></h3>
+          <h4><img class="favicon" src="https://www.yourkarma.com/favicon.ico"> <a>yourkarma.com</a></h4>
           <p>Karma Go lets you take WiFi everywhere. Pay-as-you-go for data that never expires. No contracts or monthly fees. With nationwide coverage on LTE, stay connected to the internet with all of your devices, seamlessly.</p>
          </div>
        </div>
@@ -110,7 +111,7 @@
 
        <div class="content-item">
          <div class="item-box">
-          <h3><a href="#">Conference Notes</a></h3>
+          <h4><a>Conference Notes</a></h4>
           <p>Contact Mark next week to talk about your design ideas for his project.</p>
          </div>
        </div>
@@ -118,7 +119,7 @@
     <!-- THIRD ROW -->
        <div class="content-item">
          <div class="item-box">
-          <h3><img class="favicon" src="https://www.invisionapp.com/favicon.ico"> <a href="#">invisionapp.com</a></h3>
+          <h4><img class="favicon" src="https://www.invisionapp.com/favicon.ico"> <a>invisionapp.com</a></h4>
           <p>Free Web &amp; Mobile (iOS, Android) Prototyping and UI Mockup Tool | InVision</p>
          </div>
        </div>
