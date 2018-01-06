@@ -1,0 +1,109 @@
+/*
+ * Dropit v1.1.0
+ * http://dev7studios.com/dropit
+ *
+ * Copyright 2012, Dev7studios
+ * Free to use and abuse under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* These styles assume you are using ul and li */
+.dropit {
+    list-style: none;
+	padding: 0;
+	margin: 15px 0 0;
+    float:right;
+    display:inline-block;
+}
+.dropit .dropit-trigger { position: relative; }
+.dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: 0px; /* dropdown left or right */
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    min-width: 100px;  
+    list-style: none;
+	padding: 20px;
+    margin: 10px 0 0;
+}
+.header .dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: -15px; /* dropdown left or right */
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    min-width: 100px;  
+    list-style: none;
+    padding: 20px;
+    margin: 10px 0 0;
+}
+.dropit .dropit-open .dropit-submenu { 
+    display: block;
+    background: #efebeb;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+}
+.dropit .dropit-open .dropit-submenu:after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #efebeb transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    right: 65px;
+}
+
+.header .dropit .dropit-open .dropit-submenu:after {
+    content: " ";
+    position: absolute;
+    border-style: solid;
+    border-width: 0 8px 8px;
+    border-color: #efebeb transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    right: 15px;
+}
+.dropit .dropit-open .dropit-submenu li {
+    display: block;
+    margin-bottom: 20px;
+}
+.dropit .dropit-open .dropit-submenu li:last-child {
+    margin-bottom: 0px;
+}
+.dropit .dropit-open .dropit-submenu li a {
+    color:#353535;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    font-weight:400;
+}
+i.fa.fa-file-o, .fa.fa-picture-o, .fa.fa-link {
+    padding-right: 5px;
+}
+i.fa.fa-cog, .fa.fa-users, .fa.sign-out {
+    padding-right: 5px;
+}
+@media (max-width: 640px) 
+ {
+  .header .dropit .dropit-submenu {
+    position: absolute;
+    top: 100%;
+    right: -2px;
+    left: -120px;
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+    padding: 20px;
+    margin: 10px 0 0;
+}
+ }
+
